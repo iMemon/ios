@@ -190,7 +190,8 @@
 				TargetAttributes = {
 					F255FCAA1AC9AC1300FF6E23 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = UQ8HT4Q2XM;
+						DevelopmentTeam = L526T6RLWS;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -339,6 +340,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,6 +376,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -385,12 +388,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L526T6RLWS;
 				INFOPLIST_FILE = Mattermost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattermost.Mattermost;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isystematic.wireapp-test";
 				PRODUCT_NAME = Mattermost;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ca8a599d-ba08-409d-a547-ac4907079190";
+				PROVISIONING_PROFILE_SPECIFIER = "WireAppTest-Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -400,13 +405,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L526T6RLWS;
 				INFOPLIST_FILE = Mattermost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattermost.Mattermost;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isystematic.wireapp-test";
 				PRODUCT_NAME = Mattermost;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "dc280375-a9c9-431d-ba46-f4a94258ae8b";
+				PROVISIONING_PROFILE_SPECIFIER = "WireAppTest-Adhoc";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
